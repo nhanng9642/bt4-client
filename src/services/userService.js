@@ -16,3 +16,15 @@ export async function registerUser(user) {
     }
     return data;
 }
+
+export async function startServer() {
+    const url = `${API_URL}`;
+    const request = new Request(url, {
+        method: "GET",
+        headers: {'Content-Type': 'application/json'}
+    })
+
+    const response = await fetch(request);
+    
+    return response;
+}

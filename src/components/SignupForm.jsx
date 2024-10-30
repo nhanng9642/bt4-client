@@ -16,7 +16,7 @@ export default function SigninForm() {
             {
             loading: "Creating user...",
             success: (data) => {
-                navigate('/log-in', { state: { toastMessage: data.message } });
+                navigate('/bt3-web/log-in', { state: { toastMessage: data.message } });
                 return `${data.message}`
             },
             error: (error) => `${error}`
