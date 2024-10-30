@@ -78,7 +78,7 @@ export default function SigninForm() {
 
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             Already have an account? 
-                        <Link to={"/log-in"} 
+                        <Link to={"/bt3-web/log-in"} 
                             className="font-medium text-primary-600 hover:underline dark:text-primary-500 pl-1">
                                  Log in
                         </Link>

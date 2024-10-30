@@ -14,14 +14,16 @@ return (
         reverseOrder={false}
         />
         <Routes>
-                <Route path="/" 
+                <Route path="/bt3-web" 
                         element={<Home />} 
                 />
-                <Route path="/sign-up" 
+                <Route path="/bt3-web/sign-up" 
                         element={<SignupForm />} />
-                <Route path="/log-in" 
+
+                <Route path="/bt3-web/log-in" 
                         element={<LoginForm />} />
-                        <Route path="*" element={<NotFound />} />
+
+                <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>
 )
