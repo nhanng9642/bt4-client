@@ -6,7 +6,6 @@ import Loading from "../components/Loading";
 export function GuestGuard( {children}) {
     const { isAuthenticated, isInit } = useAuth();
 
-    console.log(isInit);
     if (!isInit) return <Loading />;
 
     if (isAuthenticated) <Navigate to="/bt4-client/" />

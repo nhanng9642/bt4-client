@@ -4,8 +4,7 @@ import Loading from "../components/Loading";
 
 // eslint-disable-next-line react/prop-types
 export function AuthGuard( {children}) {
-    const { isAuthenticated, isInit } = useAuth()
-    console.log(isInit);
+    const { isAuthenticated, isInit } = useAuth();
     
     if (!isInit) return <Loading />;
 
